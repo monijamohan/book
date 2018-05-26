@@ -1,0 +1,52 @@
+<div class="panel panel-default" ng-init="getBooks()">
+<div class="panel-heading">
+  <h3 class="panel-title"> Add Books</h3>
+</div>
+<div class="panel-body">
+     <div class="row">
+       <div class="col-md-12">
+        <form ng-submit="addBook()">
+
+  <div class="form-group">
+    <label >Title </label>
+    <input type="text" class="form-control" ng-model="book.title" placeholder="Title">
+  </div>
+
+ <div class="form-group">
+    <label >Author</label>
+    <input type="text" class="form-control" ng-model="book.author" placeholder="Author">
+  </div>
+
+ <div class="form-group">
+    <label >Genre</label>
+    <select ng-model="book.genres" class="form-control" >
+      <option value="suspense">Suspense</option>
+      <option value="romance">Romance</option>
+      <option value="drama">Drama</option>
+      <option value="other">other</option>
+    </select>
+
+  </div>
+
+ <div class="form-group">
+    <label >Publisher </label>
+    <input type="text" class="form-control" ng-model="book.publisher"placeholder="Publisher">
+  </div>
+
+ <div class="form-group">
+    <label >Image </label>
+    <input type="text" class="form-control" ng-model="book.image"placeholder="Image-Url">
+  </div>
+
+ <div class="form-group">
+    <label >Description </label>
+    <textarea type="text" class="form-control" ng-model="book.description" placeholder="About book" ></textarea> 
+  </div>
+
+ 
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+</div>
+      </div>
+  </div>
+</div>
